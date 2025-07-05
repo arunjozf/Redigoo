@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RediGoo - Bus Booking System</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body,
+    html {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f0f1a;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: transparent;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    header .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #d4ff00;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #d4ff00;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #1a1a2e 60%, #0f0f1a 40%);
+      padding: 180px 50px 100px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #ccc;
+      max-width: 700px;
+      margin: auto;
+      margin-bottom: 40px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero .subtext {
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #ccc;
+      margin-bottom: 10px;
+    }
+
+    .btn-cta {
+      background: #d4ff00;
+      color: #000;
+      padding: 14px 32px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn-cta a {
+      text-decoration: none;
+      color: inherit;
+      display: inline-block;
+    }
+
+    .btn-cta:hover {
+      background-color: #bce000;
+    }
+
+    footer {
+      background-color: #1a1a2e;
+      text-align: center;
+      padding: 15px;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 28px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 30px;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">Redi<span style="color:white;">Goo</span></div>
+    <nav>
+      <a href="About.html">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="subtext">Top Bus Booking System in India</div>
+    <h2>Where Effortless Booking Meets Seamless Travel</h2>
+    <p>
+      We simplify your journey planning — with fast, reliable booking of buses across the country.
+      Trusted by travelers, operators, and transport networks.
+    </p>
+    <button class="btn-cta">
+      <a href="Login&Booking.php">Book a Ride</a>
+    </button>
+  </section>
+
+  <footer>
+    &copy; 2025 RediGoo. All Rights Reserved.
+  </footer>
+</body>
+
+</html>

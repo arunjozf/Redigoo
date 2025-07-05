@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>RediGoo Admin Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+        }
+
+        .dashboard-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+            gap: 30px;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #003366;
+            margin-bottom: 20px;
+        }
+
+        .card button {
+            padding: 10px 20px;
+            background-color: #003366;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background-color: #0055a5;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>RediGoo Admin Dashboard</h1>
+    <p>Manage buses, routes, and payments with ease</p>
+</header>
+
+<div class="dashboard-container">
+    <div class="card">
+        <h3>Manage Routes</h3>
+        <form action="manage_routes.php" method="post">
+            <button type="submit">Open</button>
+        </form>
+    </div>
+
+    <div class="card">
+        <h3>Confirm Payments</h3>
+        <form action="confirm_payment.php" method="post">
+            <button type="submit">Verify</button>
+        </form>
+    </div>
+
+    <div class="card">
+        <h3>Booking Reports</h3>
+        <form action="view_bookings.php" method="post">
+            <button type="submit">View</button>
+        </form>
+    </div>
+
+    <div class="card">
+        <h3>Email Tickets</h3>
+        <form action="send_tickets.php" method="post">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <div class="card">
+        <h3>Logout</h3>
+        <form action="logout.php" method="post">
+            <button type="submit">Logout</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 RediGoo Bus Booking System | Admin Panel
+</footer>
+
+</body>
+</html>
